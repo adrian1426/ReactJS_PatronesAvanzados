@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import './button.css';
 
-export const ExtensibleStyle = ({ name, type, onClick, children, className = 'btn btn-primary', style = {} }) => {
+export const ExtensibleStyle = (props) => {
+  const { name, type, onClick, children, ...rest } = props;
+
   return (
     <button
       name={name}
       type={type}
       onClick={onClick}
-      className={className}
-      style={style}
+      {...rest}
     >
       {children}
     </button>
