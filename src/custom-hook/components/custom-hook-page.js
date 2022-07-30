@@ -1,8 +1,17 @@
 import React from 'react';
+import CustomHook from './CustomHook';
+import { NoCustomHook } from './NoCustomHook';
 
 export const CustomHookPage = () => (
   <>
-    <h2>Custom Hook</h2>
-    <p>Sigue las instrucciones que vienen en el curso.</p>
+    <h2>Sin Custom Hook</h2>
+    <hr />
+    <NoCustomHook />
+
+    <br />
+
+    <h2>Con Custom Hook</h2>
+    <hr />
+    <CustomHook />
   </>
 );
