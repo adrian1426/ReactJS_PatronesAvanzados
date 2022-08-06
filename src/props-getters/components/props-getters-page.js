@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormRenderProps } from './FormRenderProps';
 import { PropsGetterWithHOC } from './PropsGetterWithHOC';
+import { PropsGetterWithHook } from './PropsGetterWithHook';
 import { PropsGetterWithRenderProps } from './PropsGetterWithRenderProps';
 
 export const PropsGettersPage = () => {
@@ -85,6 +86,10 @@ export const PropsGettersPage = () => {
       <h2>Con Props Getters y HOC</h2>
       <hr />
       <PropsGetterWithHOC onSubmit={onSubmit} />
+
+      <h2>Con Props Getters y Custom Hook</h2>
+      <hr />
+      <PropsGetterWithHook onSubmit={onSubmit} />
     </>
   );
 };
