@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormRenderProps } from './FormRenderProps';
+import { PropsGetterWithHOC } from './PropsGetterWithHOC';
 import { PropsGetterWithRenderProps } from './PropsGetterWithRenderProps';
 
 export const PropsGettersPage = () => {
@@ -17,7 +18,7 @@ export const PropsGettersPage = () => {
 
   return (
     <>
-      <h2>Sin Props Getters</h2>
+      <h2>Sin Props Getters y Render Props</h2>
       <hr />
       <FormRenderProps initialState={{ name: '', jobTitle: '' }}>
         {({ formValues, handleChange, handleSubmit }) => (
@@ -78,6 +79,12 @@ export const PropsGettersPage = () => {
           </form>
         )}
       </PropsGetterWithRenderProps>
+
+      <br />
+
+      <h2>Con Props Getters y HOC</h2>
+      <hr />
+      <PropsGetterWithHOC onSubmit={onSubmit} />
     </>
   );
 };
