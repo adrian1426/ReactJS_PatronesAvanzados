@@ -1,8 +1,12 @@
 import React from 'react';
+import StateInitializerForm from './StateInitializerForm';
 
-export const StateInitializerPage = () => (
-  <>
-    <h2>State Initializer</h2>
-    <p>Sigue las instrucciones que vienen en el curso.</p>
-  </>
-);
+export const StateInitializerPage = () => {
+  return (
+    <>
+      <h2>State Initializer</h2>
+      <hr />
+      <StateInitializerForm />
+    </>
+  );
+};
